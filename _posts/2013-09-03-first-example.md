@@ -15,5 +15,5 @@ d3.select('#right-col').selectAll()
   .style("color", function (d) {
     if (d > 15) return "red";
     else return "black";
-  })
+  });
 </script>

@@ -1,0 +1,29 @@
+---
+title: Second
+layout: default
+---
+
+# Second
+
+<style>
+.bar {
+  display: inline-block;
+  width: 20px;
+  height: 75px;
+  background-color: teal;
+  margin-right: 1px;
+}
+</style>
+
+<script type="text/javascript">
+var dataset = [5,10,15,20,25];
+d3.select('#right-col').selectAll()
+  .data(dataset)
+  .enter()
+  .append('div')
+  .attr('class','bar')
+  .style('height', function (d) {
+    return d*4 + 'px';
+  })
+
+</script>
