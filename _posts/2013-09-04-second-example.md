@@ -16,7 +16,7 @@ layout: default
 </style>
 
 <script type="text/javascript">
-var dataset = [5,10,15,20,25];
+var dataset = [5,10,15,20,25,43,41,8,15,43,26,2,34,26,72];
 d3.select('#right-col').selectAll()
   .data(dataset)
   .enter()
