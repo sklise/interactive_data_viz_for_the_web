@@ -11,5 +11,9 @@ d3.select('#right-col').selectAll()
   .data(dataset)
   .enter()
   .append('p')
-  .text('New Paragraph!')
+  .text(function (d) { return d;})
+  .style("color", function (d) {
+    if (d > 15) return "red";
+    else return "black";
+  })
 </script>
